@@ -62,7 +62,18 @@ function sortearAmigo() {
     let resultadoSorteo = document.getElementById("resultado");
     resultadoSorteo.innerHTML = `<li>El amigo secreto es: <strong>${amigoSecreto}</strong></li>`;
     
-    
+
+    //El juego se renicia en 20 segundos
+    setTimeout(reiniciarJuego, 20000);
+}
+
+function reiniciarJuego() {
+    // inicializar lista de amigos
+    listaAmigos = [];
+    //limpiar los nombres 
+    actualizarListaAmigos();
+    //limpiar mensaje de resultado
+    document.getElementById("resultado").innerHTML = "";
 }
 
 
