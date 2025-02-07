@@ -10,13 +10,15 @@ function agregarAmigo() {
     let input = document.getElementById("amigo");
     let nombre = input.value.trim();
     
+    // si da clic en el boton añadir y esta vacio, sale el mensaje
     if (nombre === "") {
         alert("Por favor, ingrese un nombre válido.");
         return;
     }
     
+    // alerta en caso de que se quiera añadir un nombre ya estando en la lista
     if (listaAmigos.includes(nombre)) {
-        alert("Este nombre ya ha sido agregado.");
+        alert(`${nombre} ya existe`);
         return;
     }
     
@@ -26,6 +28,7 @@ function agregarAmigo() {
     
 }
 
+//limpar caja una vez que se de en el boton añadir
 function limpiarCaja(){
     document.getElementById('amigo').value = '';
 }
@@ -40,3 +43,27 @@ function actualizarListaAmigos() {
         listaNombres.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    //en caso que le den al boton sortear amigo si haber añadido nimgun amigo saldra la siguiente alerta
+    if (listaAmigos.length === 0) {
+        alert("No ha añadido ningun nombre.");
+        return;
+    } 
+    // sino añade solo un nombre y le dan a boton sortear amigo le saldra la siguiete alarta
+    if (listaAmigos.length === 1){
+        alert ("Dabe agregra al menos dos nombres para sortear.");
+        return;
+    }
+    
+    let amigoAleatorio = Math.floor(Math.random() * listaAmigos.length);
+    let amigoSecreto = listaAmigos[amigoAleatorio];
+    
+    let resultadoSorteo = document.getElementById("resultado");
+    resultadoSorteo.innerHTML = `<li>El amigo secreto es: <strong>${amigoSecreto}</strong></li>`;
+    
+    
+}
+
+
+
