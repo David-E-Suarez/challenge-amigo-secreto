@@ -7,9 +7,9 @@ Este Juego permite a los usuarios ingresar nombres de amigos en una lista y real
 - Agregar nombres de amigos a una lista.
 - Validar que los nombres ingresados que sean válidos(no esté vacío) ni repetidos.
 - Visualizar la lista de amigos en la pantalla.
-- Para sortear amigo válidas que haya más de un nombre ni vacía la lista de amigos.
+- Para sortear amigo, válidar que haya más de un nombre o que no este vacía la lista de amigos.
 - Realizar un sorteo aleatorio y mostrar el amigo secreto.
-- Reiniciar el juego en 20 segudos una ves mostrado el amigo secreto.
+- Reiniciar el juego en 20 segudos.
 
 ## Instrucciones de Uso
 ingresa:https://david-e-suarez.github.io/challenge-amigo-secreto/
