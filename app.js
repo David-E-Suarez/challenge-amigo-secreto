@@ -37,11 +37,11 @@ function actualizarListaAmigos() {
     let listaNombres = document.getElementById("listaAmigos");
     listaNombres.innerHTML = "";
     
-    listaAmigos.forEach(amigo => {
+    for (let i = 0; i < listaAmigos.length; i++){
         let li = document.createElement("li");
-        li.textContent = amigo;
+        li.textContent = listaAmigos[i];
         listaNombres.appendChild(li);
-    });
+    }
 }
 
 function sortearAmigo() {
