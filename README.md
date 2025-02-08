@@ -1,4 +1,4 @@
-#Amigo Secreto
+<h1 align="center">Amigo Secreto</h1>
 
 ## Descripción Juego:
 Este Juego permite a los usuarios ingresar nombres de amigos en una lista y realizar un sorteo aleatorio para determinar quién es el "amigo secreto".
